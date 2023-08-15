@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+ web:
+  build:
+    context: .
+    dockerfile: Dockerfile
+  ports:
+    - "5000:5000"
+  environment:
+    GREETINGS: ${GREETINGS} 
+ curl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - web
+    command: ["sh", "-c", "wget -O- http://web:5000/health"]

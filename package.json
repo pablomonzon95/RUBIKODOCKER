@@ -1,0 +1,25 @@
+{
+  "name": "rubikodocker",
+  "version": "1.0.0",
+  "description": "pequeño servidor que escucha peticiones que se encuentra contenido en docker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablomonzon95/RUBIKODOCKER.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablomonzon95/RUBIKODOCKER/issues"
+  },
+  "homepage": "https://github.com/pablomonzon95/RUBIKODOCKER#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
